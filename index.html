@@ -51,8 +51,42 @@
     <main>
         <section class="hero">
             <div class="container">
-            <h1 class="main-header"> Эффективные решения для вашего бизнеса</h1>
+                <h1 class="main-header"> Эффективные решения для вашего бизнеса</h1>
             <button data-modal-open type="button" class="main-button">Заказать улугу</button>
+            </div>
+            <div class="backdrop is-hidden" data-modal>
+                <div class="modal">
+                    <button data-modal-close type="button" class="button">
+                        <svg class="icon-close">
+                            <use href="./images/symbol-defs.svg#icon-close"></use>
+                        </svg>
+                    </button>
+                    <h3 class="modal-tittle">Оставьте свои данные, мы вам перезвоним</h3>
+                  <form class="form" name="form" action="#" autocomplete="off" novalidate>
+                      <div role="group">
+                        <label class="form-label" for="name">Имя</label>
+                        <input class="form-input" type="text" id="name" autofocus>
+
+                        <label class="form-label" for="phone">Телефон</label>
+                        <input class="form-input" type="text" id="phone">
+
+                        <label class="form-label" for="email">Почта</label>
+                        <input class="form-input" type="text" id="email">
+
+                        <label class="form-label" for="comments">Комментарий</label>
+                        <textarea  class="comments" name="comments" id="" cols="30" rows="10" placeholder="Введите текст"></textarea>
+                    </div>
+                    <div class="form-agree">
+                        <input class="form-checkbox" type="checkbox" id="agree">
+                        <label for="agree">Соглашаюсь с рассылкой и принимаю 
+                            <span>
+                                <a class="conditions" href="">Условия договора</a>
+                            </span>
+                        </label>
+                    </div>
+                    <button class="submit" type="submit">Отправить</button>
+                    </form>
+                </div>
             </div>
         </section>
         <!--Особенности-->
@@ -324,15 +358,6 @@
             </ul>
         </div>
         </section>
-        <div class="backdrop is-hidden" data-modal>
-            <div class="modal">
-                <button data-modal-close type="button" class="button">
-                    <svg class="icon-close">
-                        <use href="./images/symbol-defs.svg#icon-close"></use>
-                    </svg>
-                </button>
-            </div>
-        </div>
     </main>
     <footer class="footer"> 
         <container class="container box">
@@ -346,7 +371,6 @@
         </div>
         <div class="add-socials">
                 <h3 class="tittle">Присоединяйтесь</h3>
-                <div>
                     <ul class="social-list">
                 <li class="social-item">
                     <a href="" class="footer-link">
@@ -377,6 +401,13 @@
                     </a>
                 </li>
                     </ul>
+                </div>
+                <div class="form-footer">
+                    <form action="#">
+                        <legend class="legend-footer">Подпишитесь на рассылку</legend>
+                        <input class="your-email" type="email" placeholder="E-mail">
+                        <button class="subscribe" type="submit">Подписаться</button>
+                    </form>
                 </div>
     </container>
     </footer>
