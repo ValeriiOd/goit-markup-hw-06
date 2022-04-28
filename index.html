@@ -64,21 +64,35 @@
                     <h3 class="modal-tittle">Оставьте свои данные, мы вам перезвоним</h3>
                   <form class="form" name="form" action="#" autocomplete="off" novalidate>
                       <div role="group">
-                        <label class="form-label" for="name">Имя</label>
-                        <input class="form-input" type="text" id="name" autofocus>
-
-                        <label class="form-label" for="phone">Телефон</label>
-                        <input class="form-input" type="text" id="phone">
-
-                        <label class="form-label" for="email">Почта</label>
-                        <input class="form-input" type="text" id="email">
-
-                        <label class="form-label" for="comments">Комментарий</label>
-                        <textarea  class="comments" name="comments" id="" cols="30" rows="10" placeholder="Введите текст"></textarea>
+                         <div class="form-field">
+                            <label class="form-label" for="name">Имя</label>
+                            <input class="form-input" type="text" id="name" autofocus>
+                            <svg class="modal-icons person">
+                                <use href="./images/symbol-defs.svg#icon-person-black"></use>
+                            </svg>
+                        </div>
+                            <div class="form-field">
+                            <label class="form-label" for="tel">Телефон</label>
+                            <input class="form-input" type="tel" id="tel">
+                            <svg class="modal-icons">
+                                <use href="./images/symbol-defs.svg#icon-phone-black"></use>
+                            </svg>
+                        </div>
+                        <div class="form-field">
+                            <label class="form-label" for="email">Почта</label>
+                            <input class="form-input" type="text" id="email">
+                            <svg class="modal-icons">
+                                <use href="./images/symbol-defs.svg#icon-email-black"></use>
+                            </svg>
+                        </div>
+                        <div>
+                            <label class="form-label" for="comments">Комментарий</label>
+                            <textarea  class="comments" name="comments" id="comments" placeholder="Введите текст"></textarea>
+                        </div> 
                     </div>
                     <div class="form-agree">
                         <input class="form-checkbox" type="checkbox" id="agree">
-                        <label for="agree">Соглашаюсь с рассылкой и принимаю 
+                        <label class="agree" for="agree">Соглашаюсь с рассылкой и принимаю 
                             <span>
                                 <a class="conditions" href="">Условия договора</a>
                             </span>
